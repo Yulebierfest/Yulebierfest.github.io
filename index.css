@@ -1,0 +1,333 @@
+body {
+    background-color: #facf9f;
+}
+
+p {
+    text-align: center;
+    font-family: Epilogue;
+}
+
+li {
+    text-align: left;
+    font-size: 150%;
+    font-family: Epilogue;
+    margin: 25px;
+}
+
+a:link {
+    color: #02361f;
+}
+
+/* Visited link (after a user clicks it) */
+a:visited {
+    color: #02361f;
+}
+
+/* Mouse over link (when hovering) */
+a:hover {
+    color: #02361f;
+}
+
+/* Active link (the exact moment it is clicked) */
+a:active {
+    color: #02361f;
+}
+
+.heading {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* The container acts as the anchor point */
+.image-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.base-img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* The overlay image is forced to sit on top */
+.overlay-img {
+    position: absolute;
+    width: 50%;     /* Size of your overlay image */
+    z-index: 10;     /* Ensures it stays on top layer */
+}
+
+.directions {
+    position: absolute;
+    width: 50%;     /* Size of your overlay image */
+    z-index: 10;     /* Ensures it stays on top layer */
+    transform: translate(0%, 65%);
+}
+
+.flex-img {
+    display: block;
+    width: 250px;
+    height: 250px;
+}
+
+.flex-center {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.lefthand {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    position: relative;
+}
+
+.righthand {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    text-align: right;
+    position: relative;
+}
+
+.split-row {
+    display: flex;
+    justify-content: space-between; /* Pushes items to opposite sides */
+    align-items: center;            /* Perfectly centers them vertically */
+}
+
+.flex-menu-images {
+    display: flex;          /* Aligns items horizontally */
+    list-style-type: none;  /* Removes default bullet points */
+    margin: 50px;              /* Removes default browser margins */
+    padding: 0;             /* Removes default browser padding */
+    gap: 0;              /* Adds consistent space between items */
+    font-size: 100%;
+}
+
+.flex-menu {
+    display: flex;          /* Aligns items horizontally */
+    list-style-type: none;  /* Removes default bullet points */
+    margin: 50px;              /* Removes default browser margins */
+    padding: 0;             /* Removes default browser padding */
+    gap: 0;              /* Adds consistent space between items */
+    font-size: 100%;
+}
+
+.footing {
+    font-size: 200%;
+}
+
+.tickets {
+    padding: 30px;
+    border: 2px solid white;
+    border-radius: 20px;
+    background-color: #02361f;
+    font-size: 160%;
+}
+
+.tickets:hover {
+    background-color: #04653a;
+}
+
+.description {
+    color: white;
+    width: 50%;
+    line-height: 115%;
+}
+
+.explanation {
+    font-size: 300%;
+    width: 50%;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+@font-face {
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('Assets/Fonts/Epilogue/epilogue.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Anton';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('Assets/Fonts/Anton/anton.woff2') format('woff2');
+}
+
+/* Mobile responsive styles - Portrait */
+@media (max-width: 768px) or (orientation: portrait) {
+    html, body {
+        height: 100%;
+    }
+
+    html {
+        display: table;
+        margin: auto;
+    }
+
+    body {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    li {
+        font-size: 120%;
+        margin: 5px;
+    }
+
+    .explanation {
+        font-size: 100%;
+        width: 100%;
+        margin: 20px;
+        margin-left: 5px;
+        margin-right: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .description {
+        width: 80%;
+    }
+
+    .directions {
+        font-size: 50%;
+        transform: translate(0%, 40%);
+    }
+
+    .flex-img {
+        width: 50%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .flex-menu-images {
+        margin: 5px;              /* Removes default browser margins */
+        font-size: 50%;
+        max-width: fit-content;
+        display: block;
+    }
+
+    .flex-menu {
+        margin: 5px;              /* Removes default browser margins */
+        font-size: 50%;
+        max-width: fit-content;
+    }
+
+    .tickets {
+        padding: 15px;
+        font-size: 80%;
+        transform: translate(0%, -25%);
+    }
+
+    .split-row {
+        display: block;
+        -webkit-transform:  rotate(180deg);
+        transform:  rotate(180deg);
+    }
+
+    .split-row > span {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+
+    .lefthand {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: relative;
+    }
+
+    .righthand {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: relative;
+    }
+
+    .heading {
+        margin-top: 25px;
+    }
+
+    .footing {
+        font-size: 100%;
+        margin-bottom: 100px;
+    }
+}
+
+/* Mobile responsive styles - Landscape */
+@media (min-width: 768px) and (orientation: landscape) {
+    html, body {
+        height: 100%;
+    }
+
+    html {
+        display: table;
+        margin: auto;
+    }
+
+    body {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    .flex-menu {
+        margin: 5px;              /* Removes default browser margins */
+        font-size: 50%;
+        max-width: fit-content;
+    }
+
+    .flex-menu-images {
+        margin: 5px;              /* Removes default browser margins */
+        font-size: 50%;
+    }
+
+    .flex-img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .explanation {
+        font-size: 150%;
+        width: 100%;
+        margin: 20px;
+        margin-left: 5px;
+        margin-right: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .directions {
+        font-size: 100%;
+        transform: translate(0%, 40%);
+    }
+
+    .tickets {
+        padding: 20px;
+        font-size: 100%;
+        transform: translate(0%, -25%);
+    }
+}
+
