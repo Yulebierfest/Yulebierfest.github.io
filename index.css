@@ -40,7 +40,7 @@ p {
 
 li {
     text-align: left;
-    font-size: 150%;
+    font-size: 125%;
     font-family: Epilogue;
     margin: 25px;
 }
@@ -408,8 +408,8 @@ a:active {
 }
 
 .explanation {
-    font-size: 300%;
-    width: 50%;
+    font-size: 200%;
+    width: 66%;
     margin-left: 50px;
     margin-right: 50px;
     padding-left: 200px;
@@ -441,6 +441,16 @@ a:active {
 }
 
 /* Mobile responsive styles - Portrait */
+@media (pointer: coarse) and (orientation: portrait) and (min-aspect-ratio: 3/5) {
+    li {
+        font-size: 120%;
+    }
+
+    .flex-menu-images {
+        transform: scale(0.85);
+    }
+}
+
 @media (max-width: 845px) and (orientation: portrait) and (max-aspect-ratio: 3/5) {
     html, body {
         height: 100%;
@@ -700,6 +710,10 @@ a:active {
     body {
         display: table-cell;
         vertical-align: middle;
+    }
+
+    li {
+        font-size: 150%;
     }
 
     .split-row {
