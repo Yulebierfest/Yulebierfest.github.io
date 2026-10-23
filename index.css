@@ -652,17 +652,24 @@ a:active {
 }
 
 /* Mobile responsive styles - Landscape */
-@media (min-width: 645px) and (orientation: landscape) and (pointer: coarse) and (min-aspect-ratio: 3/5) {
+@media (min-width: 645px) and (orientation: landscape) and (pointer: coarse) and (min-aspect-ratio: 3/5) and (max-aspect-ratio: 5/3) {
     .title-img {
         width: 35%;
         transform: translate(0%, 135%);
     }
 }
 
+@media (min-width: 645px) and (orientation: landscape) and (pointer: coarse) and (min-aspect-ratio: 5/3) {
+    .title-img {
+        width: 30%;
+        transform: translate(0%, 150%);
+    }
+}
+
 @media (min-width: 645px) and (orientation: landscape) and (pointer: coarse) and (max-aspect-ratio: 5/3) {
     .title-img {
-        width: 32%;
-        transform: translate(0%, 107%);
+        width: 30%;
+        transform: translate(0%, 125%);
     }
 }
 
@@ -670,6 +677,13 @@ a:active {
     .title-img {
         width: 35%;
         transform: translate(0%, 135%);
+    }
+}
+
+@media (min-width: 845px) and (orientation: portrait) {
+    .title-img {
+        width: 50%;
+        transform: translate(0%, 150%);
     }
 }
 
@@ -704,7 +718,7 @@ a:active {
     }
 
     .heading {
-        padding-bottom: 1000px;
+        padding-bottom: 1100px;
     }
 
     .overlay {
@@ -766,11 +780,11 @@ a:active {
     }
 
     .lefthand-top {
-        transform: translate(0%, 50%);
+        transform: translate(20%, 50%);
     }
 
     .righthand-top {
-        transform: translate(0%, 80%);
+        transform: translate(-20%, 80%);
     }
 
     .overlay-img {
