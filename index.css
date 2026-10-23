@@ -107,7 +107,7 @@ a:active {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 1250px;
+    padding-bottom: 1350px;
 }
 
 .modal {
@@ -438,6 +438,12 @@ a:active {
     font-weight: 400;
     font-display: swap;
     src: url('Assets/Fonts/Epilogue/epilogue.woff2') format('woff2');
+}
+
+@media not (pointer: coarse) {
+    .title-img {
+        width: 35%;
+    }
 }
 
 /* Mobile responsive styles - Portrait */
